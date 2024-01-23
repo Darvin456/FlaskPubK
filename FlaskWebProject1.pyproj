@@ -33,6 +33,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".gitattributes" />
+    <Content Include=".gitignore" />
+    <Content Include="database.db" />
     <Content Include="requirements.txt" />
     <Content Include="schema.sql">
       <SubType>Code</SubType>
@@ -55,11 +58,18 @@
     <Content Include="templates\post.html">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="__pycache__\app.cpython-312.pyc" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="obj\" />
+    <Folder Include="obj\Any CPU\" />
+    <Folder Include="obj\Any CPU\Debug\" />
+    <Folder Include="obj\Debug\" />
+    <Folder Include="Properties\" />
     <Folder Include="static\" />
     <Folder Include="static\css\" />
     <Folder Include="templates\" />
+    <Folder Include="__pycache__\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 
